@@ -6,7 +6,7 @@
  * Time: 9:39 AM
  * To change this template use File | Settings | File Templates.
  */
-namespace request;
+namespace assistant;
 class curl {
     private $ch;//Curl Handler
     private $response;
