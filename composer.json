@@ -1,5 +1,5 @@
 {
-    "name": "Request/Curl",
+    "name": "request/curl",
     "type": "library",
     "description": "PHP CURL Class",
     "keywords": ["php","curl","php curl","curl class"],
