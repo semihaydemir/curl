@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-0": {
-            "asistant\\curl": "src/"
+            "assistant\\curl": "src/"
         }
     }
 }
