@@ -5,7 +5,7 @@
     "keywords": ["php","curl","php curl","curl class","assistant curl","curl assistant","curl wrapper","screen scraper"],
     "homepage": "https://github.com/semihaydemir/curl",
     "license": "MIT",
-    "minimum-stability":"stable",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Semih Aydemir",
