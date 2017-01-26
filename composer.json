@@ -5,6 +5,7 @@
     "keywords": ["php","curl","php curl","curl class","assistant curl","curl assistant","curl wrapper"],
     "homepage": "https://github.com/semihaydemir/curl",
     "license": "MIT",
+    "minimum-stability":"stable",
     "authors": [
         {
             "name": "Semih Aydemir",
@@ -22,7 +23,7 @@
     },
     "autoload": {
         "psr-0": {
-            "curl": "src/"
+            "asistant\\curl": "src/"
         }
     }
 }
