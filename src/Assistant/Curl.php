@@ -148,7 +148,6 @@ class Curl {
         return $this->http_header[$key];
     }
     public function curl2string(){
-
         $str='curl ';
         if(!empty($this->http_header)){
             foreach($this->http_header as $header){
