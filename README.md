@@ -45,7 +45,7 @@ $curl->request('get','https://httpbin.org/post','first_name=Semih&last_name=Ayde
 $curl=new Assistant\Curl();
 $curl->request('post','https://httpbin.org/post','first_name=Semih&last_name=Aydemir');
 ```
-
+## Available methods
  - $curl->setLink();
  - $curl->getLink();
  - $curl->setHeader();
