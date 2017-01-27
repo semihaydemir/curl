@@ -74,6 +74,13 @@ class Curl {
         }
     }
     public function get($url=null,$params=null){
+        if(!is_null($params)){
+            if(strstr($url,'?')){
+                $url.=$params;
+            }else{
+                $url.='?'.$params;
+            }
+        }
         $this->setUrl($url);
         $this->setOpt(CURLOPT_POST,false);
         $this->setOpt(CURLOPT_HTTPGET,true);
