@@ -15,7 +15,6 @@ composer require assistant/curl dev-master
 ```
 
 
-
 ## Usage examples
 
 ```php
