@@ -38,6 +38,13 @@ class Curl {
     public function getFollowLocation(){
         return $this->getOpt(CURLOPT_FOLLOWLOCATION);
     }
+    public function setAutoReferer($boolean){
+        $this->setOpt(CURLOPT_AUTOREFERER,$boolean);
+        return $this;
+    }
+    public function getAutoReferer(){
+        return $this->getOpt(CURLOPT_AUTOREFERER);
+    }
     public function setProxy($ip){
         $this->setOpt(CURLOPT_PROXY,$ip);
         return $this;

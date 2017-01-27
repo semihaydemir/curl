@@ -59,6 +59,8 @@ $curl->request('post','https://httpbin.org/post','first_name=Semih&last_name=Ayd
  - $curl->getProxy();
  - $curl->setFollowLocation();
  - $curl->getFollowLocation();
+ - $curl->setAutoReferer();
+ - $curl->getAutoReferer();
  - $curl->setTimeOut();
  - $curl->getTimeOut();
  - $curl->setParams();
