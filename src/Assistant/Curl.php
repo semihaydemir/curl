@@ -132,6 +132,7 @@ class Curl {
         return preg_match("#2[0-9]{2}#",$this->getInfo('http_code'))?true:false;
     }
     public function setHeaders($headers=[]){
+        $this->http_header=$headers;
         $this->setOpt(CURLOPT_HTTPHEADER,$headers);
         return $this;
     }
