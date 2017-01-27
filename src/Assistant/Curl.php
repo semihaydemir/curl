@@ -21,6 +21,7 @@ class Curl {
 
     function __construct(){
         $this->ch=curl_init();
+        $this->setFollowLocation(true);
     }
     public function setOpt($CURLOPT,$value){
         $this->opt_list[$CURLOPT]=$value;
@@ -29,6 +30,20 @@ class Curl {
     }
     public function getOpt($CURLOPT){
         return $this->opt_list[$CURLOPT];
+    }
+    public function setFollowLocation($boolean){
+        $this->setOpt(CURLOPT_FOLLOWLOCATION,$boolean);
+        return $this;
+    }
+    public function getFollowLocation(){
+        return $this->getOpt(CURLOPT_FOLLOWLOCATION);
+    }
+    public function setProxy($ip){
+        $this->setOpt(CURLOPT_PROXY,$ip);
+        return $this;
+    }
+    public function getProxy(){
+        return $this->getOpt(CURLOPT_PROXY);
     }
     public function setUrl($Url){
         $this->setOpt(CURLOPT_URL,$Url);
