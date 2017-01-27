@@ -17,31 +17,53 @@ composer require assistant/curl dev-master
 ## Usage examples
 
 ```php
-$curl = new Assistant/Curl();
-$curl->get('http://www.example.com/');
+$curl=new Assistant\Curl();
+$curl->get('https://httpbin.org/get');
 ```
 
 ```php
-$curl = new Assistant/Curl();
-$curl->request('get','http://www.example.com/');
+$curl=new Assistant\Curl();
+$curl->get('https://httpbin.org/get','first_name=Semih&last_name=Aydemir');
 ```
 
 ```php
-$curl = new Assistant/Curl();
-$curl->request('post','http://www.example.com/','params');
+$curl=new Assistant\Curl();
+$curl->post('https://httpbin.org/post');
 ```
 
 ```php
-$curl = new Assistant/Curl();
-$curl->get('http://www.example.com/search', array(
-    'q' => 'keyword',
-));
+$curl=new Assistant\Curl();
+$curl->post('https://httpbin.org/post','first_name=Semih&last_name=Aydemir');
 ```
 
 ```php
-$curl = new Assistant/Curl();
-$curl->post('http://www.example.com/login/', array(
-    'username' => 'myusername',
-    'password' => 'mypassword',
-));
+$curl=new Assistant\Curl();
+$curl->request('get','https://httpbin.org/post','first_name=Semih&last_name=Aydemir');
 ```
+
+```php
+$curl=new Assistant\Curl();
+$curl->request('post','https://httpbin.org/post','first_name=Semih&last_name=Aydemir');
+```
+
+ - $curl->setLink();
+ - $curl->getLink();
+ - $curl->setHeader();
+ - $curl->getHeader();
+ - $curl->setHeaders();
+ - $curl->getHeaders();
+ - $curl->setUserAgent();
+ - $curl->getUserAgent();
+ - $curl->setTimeOut();
+ - $curl->getTimeOut();
+ - $curl->getResponse();
+ - $curl->getErrorMessage();
+ - $curl->getErrorNo();
+ - $curl->getInfo();
+ - $curl->isSuccess();
+ - $curl->curl2string();
+ - $curl->log();
+ - $curl->get();
+ - $curl->post();
+ - $curl->request();
+
