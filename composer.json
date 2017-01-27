@@ -2,7 +2,7 @@
     "name": "assistant/curl",
     "type": "library",
     "description": "PHP CURL Class",
-    "keywords": ["php","curl","php curl","curl class","assistant curl","curl assistant","curl wrapper","screen scraper"],
+    "keywords": ["php","curl","php curl","curl class","assistant curl","curl assistant","curl wrapper","screen scraper","assistant"],
     "homepage": "https://github.com/semihaydemir/curl",
     "license": "MIT",
     "minimum-stability": "dev",
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-0": {
-            "assistant": "curl/src/"
+            "Assistant": "src/"
         }
     }
 }
