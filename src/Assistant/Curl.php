@@ -17,6 +17,7 @@ class Curl {
     private $ch_error_no;
     private $ch_error_message;
     private $http_header;
+    private $params;
 
     function __construct(){
         $this->ch=curl_init();
@@ -58,6 +59,24 @@ class Curl {
 
         return $this->response;
     }
+    public function setParams($key=null,$value=null){
+        if(is_array($key)){
+            foreach($key as $k=>$value){
+                $this->params[$k]=$value;
+            }
+        }else{
+            $this->params[$key]=$value;
+        }
+        return $this;
+    }
+
+    public function getParams($key=null){
+        if(is_null($key)){
+            return $this->params;
+        }else{
+            return $this->params[$key];
+        }
+    }
     public function request($type=null,$url=null,$params=null){
         switch(trim(strtolower($type))){
             case 'get':{
@@ -75,6 +94,7 @@ class Curl {
     }
     public function get($url=null,$params=null){
         if(!is_null($params)){
+            $this->setParams($params);
             if(strstr($url,'?')){
                 $url.=$params;
             }else{

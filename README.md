@@ -1,5 +1,7 @@
 # PHP Curl Class
 
+![enter image description here](https://2.bp.blogspot.com/-6c5vC3FcSBM/VjDgQfrOOiI/AAAAAAAAIXE/hq0-TtyXugY/s1600/phpcurl.png)
+
 This library provides an object-oriented wrapper of the PHP cURL extension.
 
 If you have questions or problems with installation or usage [create an Issue](https://github.com/semihaydemir/curl/issues).
@@ -56,6 +58,8 @@ $curl->request('post','https://httpbin.org/post','first_name=Semih&last_name=Ayd
  - $curl->getUserAgent();
  - $curl->setTimeOut();
  - $curl->getTimeOut();
+ - $curl->setParams();
+ - $curl->getParams();
  - $curl->getResponse();
  - $curl->getErrorMessage();
  - $curl->getErrorNo();
