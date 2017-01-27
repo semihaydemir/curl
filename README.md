@@ -1,4 +1,4 @@
-# PHP Curl Class
+# PHP Assistant/Curl Class
 
 ![enter image description here](https://2.bp.blogspot.com/-6c5vC3FcSBM/VjDgQfrOOiI/AAAAAAAAIXE/hq0-TtyXugY/s1600/phpcurl.png)
 
