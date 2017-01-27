@@ -11,7 +11,7 @@ If you have questions or problems with installation or usage [create an Issue](h
 In order to install this library via composer run the following command in the console:
 
 ```sh
-composer require assistant/curl dev-master
+composer require assistant/curl
 ```
 
 
